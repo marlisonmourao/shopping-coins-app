@@ -1,26 +1,35 @@
 
+import '@/styles/global.css'
 import { Slot } from 'expo-router'
-import '../styles/global.css'
 
 import {
   Sora_400Regular,
-  Sora_500Medium,
+  Sora_600SemiBold,
   Sora_700Bold,
   useFonts
 } from '@expo-google-fonts/sora'
+import React from 'react'
+import { StatusBar } from 'react-native'
 
 export default function LayoutRoot() {
   const [fontsLoaded] = useFonts({
-     Sora_400Regular, 
-     Sora_500Medium, 
-     Sora_700Bold
+    Sora_400Regular,
+    Sora_600SemiBold,
+    Sora_700Bold
   })
 
-  if(!fontsLoaded) {
-    return 
+  if (!fontsLoaded) {
+    return
   }
 
   return (
-    <Slot />
+    <>
+      <StatusBar
+        barStyle='light-content'
+        backgroundColor='transparent'
+        translucent
+      />
+      <Slot />
+    </>
   )
 }

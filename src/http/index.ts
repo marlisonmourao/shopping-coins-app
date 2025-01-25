@@ -1,0 +1,1 @@
+export const BASE_URL_API_FAKE = 'http://192.168.0.34:5000' 
