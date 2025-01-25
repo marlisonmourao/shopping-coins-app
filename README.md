@@ -16,7 +16,7 @@ Bem-vindo ao Shopping Coins, um aplicativo mobile desenvolvido em React Native c
 - [✅] Criar um sistema de autenticação básico.
 - [✅] Permitir login utilizando e-mail e senha.
 - [✅] Manter o estado de autenticação do usuário entre as sessões.
-- [✅] Criar fluxo de alteração e cadastro de novos usuários.
+- [✅] Criar de cadastro de novos usuários.
 
 ### IV. Estrutura de Dados (API com JSON Server)
 - [✅] Criar e configurar a API simulada com os seguintes objetos:
