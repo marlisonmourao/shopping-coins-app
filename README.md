@@ -58,13 +58,32 @@ Bem-vindo ao Shopping Coins, um aplicativo mobile desenvolvido em React Native c
     npm install
     ```
 
-4. Inicie a API fake com JSON Server:
+4. **Importante:** Para que o aplicativo funcione corretamente, altere a URL base da API no arquivo `http/index.js` para o IP da sua máquina local, pois `http://localhost` não funcionará no dispositivo físico. 
+
+   Para encontrar o **IP da sua máquina**, execute um dos seguintes comandos, dependendo do seu sistema operacional:
+
+   - **No Windows**:
+     ```bash
+     ipconfig
+     ```
+     O endereço IP será listado em "Endereço IPv4".
+
+   - **No macOS ou Linux**:
+     ```bash
+     ifconfig
+     ```
+     Procure pela seção `en0` ou `wlan0` e pegue o valor em `inet`.
+
+   Após obter o IP, substitua a URL base no arquivo `http/index.js` de:
+   ```js
+   const baseURL = 'http://localhost:3000';
+5. Inicie a API fake com JSON Server:
     ```bash
     npm run api
     ```
     Isso iniciará o servidor da API localmente, essencial para que as funcionalidades do aplicativo funcionem corretamente.
 
-5. Inicie o aplicativo mobile:
+6. Inicie o aplicativo mobile:
     ```bash
     npx expo start
     ```
@@ -82,4 +101,3 @@ O usuário padrão para fazer login no aplicativo é:
 - Implementar notificações de push.
 - Criar testes automatizados para validar a aplicação.
 - Aprimorar a interface com animações e transições suaves.
-
