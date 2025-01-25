@@ -76,7 +76,7 @@ Bem-vindo ao Shopping Coins, um aplicativo mobile desenvolvido em React Native c
 
    Após obter o IP, substitua a URL base no arquivo `http/index.js` de:
    ```js
-   const baseURL = 'http://localhost:3000';
+   const baseURL = 'http://localhost:5000';
 5. Inicie a API fake com JSON Server:
     ```bash
     npm run api
